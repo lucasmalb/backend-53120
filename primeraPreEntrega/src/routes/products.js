@@ -4,7 +4,6 @@ import { ProductManager } from "../productManager.js";
 const productRouter = Router();
 const products = new ProductManager("./Data/products.json");
 
-//Controller para todos los productos
 productRouter.get(`/`, async (req, res) => {
     try {
         const { limit } = req.query;
