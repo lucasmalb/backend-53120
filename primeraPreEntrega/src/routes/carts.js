@@ -3,8 +3,8 @@ import  CartManager  from "../cartManager.js";
 import { ProductManager } from "../productManager.js"; 
 
 const cartsRouter = Router();
-const carts = new CartManager("../Data/carts.json");
-const products = new ProductManager("../Data/products.json");
+const carts = new CartManager("./src/Data/carts.js");
+const products = new ProductManager("./src/Data/products.json");
 
 // Controller de búsqueda por Id
 cartsRouter.get("/:cid", async (req, res) => {
