@@ -1,6 +1,6 @@
 import { promises as fs } from "fs";
 
-export default class CartManager {
+class CartManager {
   constructor(filePath) {
     this.path = filePath;
     this.carts = [];
@@ -66,3 +66,4 @@ export default class CartManager {
     return this.carts.length + 1;
   }
 }
+export default  CartManager 

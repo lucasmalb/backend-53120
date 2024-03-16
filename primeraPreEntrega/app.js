@@ -1,8 +1,8 @@
 import express from 'express';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
-import productsRouter from './routes/products.js';
-import cartsRouter from './routes/carts.js';
+import productsRouter from './src/routes/products.js';
+import cartsRouter from './src/routes/carts.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
