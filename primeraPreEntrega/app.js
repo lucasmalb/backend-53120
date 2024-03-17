@@ -18,3 +18,4 @@ app.use(express.static(join(__dirname, '../public')));
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
